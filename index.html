@@ -1,29 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Benvenuto sul mio sito!</h1>
-    </header>
-    <main>
-        <p>Questo è un esempio di sito web creato con HTML e CSS.</p>
-        <script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>AleArty — Supporto & Privacy</title>
+    <meta
+      name="description"
+      content="AleArty: pagina ufficiale con contatti supporto e privacy policy."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Vai al contenuto</a>
 
-<stripe-buy-button
-  buy-button-id="buy_btn_1Q0KbnRvUKgZz08w0j51THZD"
-  publishable-key="pk_test_51PivoARvUKgZz08wP3A8f8C9w0Bq5uGdJd4z6xGEQMywOvmkHxKAC1J5Qxrbwmo9Xls063nV3cOwSJZAjtVdNXDi005TkWKeA3"
->
-</stripe-buy-button>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand" aria-label="AleArty">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span class="brand__name">AleArty</span>
+        </div>
+        <nav class="nav" aria-label="Navigazione">
+          <a class="nav__link" href="#privacy">Privacy Policy</a>
+          <a class="nav__link" href="#supporto">Supporto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="container hero__inner">
+          <h1 class="hero__title">AleArty</h1>
+          <p class="hero__subtitle">
+            Pagina ufficiale con <strong>Privacy Policy</strong> e
+            <strong>contatti supporto</strong>.
+          </p>
+          <div class="hero__cta">
+            <a class="button" href="#supporto">Contatta il supporto</a>
+            <a class="button button--ghost" href="#privacy">Leggi la privacy</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="privacy">
+        <div class="container">
+          <h2 class="section__title">Privacy Policy</h2>
+          <p class="section__lede">
+            Data di efficacia: <strong>02/06/2026</strong>
+          </p>
+
+          <div class="card">
+            <h3 class="card__title">Titolare del trattamento</h3>
+            <p class="card__body">
+              Per qualunque richiesta sulla privacy puoi contattarci a
+              <a href="mailto:Clackitapp@gmail.com">Clackitapp@gmail.com</a>.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h3 class="card__title">Dati che potremmo trattare</h3>
+              <div class="card__body">
+                <ul>
+                  <li>
+                    Dati tecnici di utilizzo (es. eventi di funzionamento,
+                    informazioni sul dispositivo/OS) necessari per far
+                    funzionare l’app e migliorarla.
+                  </li>
+                  <li>
+                    Dati legati agli acquisti in-app (es. stato di
+                    sottoscrizione/acquisto), gestiti tramite l’ecosistema
+                    Apple.
+                  </li>
+                </ul>
+                <p class="muted">
+                  Non chiediamo dati “sensibili”. Se l’app ti consente di
+                  inserire testi/nome squadra o contenuti, questi restano nella
+                  logica del gioco e vengono usati solo per l’esperienza in-app.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Finalità</h3>
+              <div class="card__body">
+                <ul>
+                  <li>Fornire le funzionalità dell’app e il matchmaking/lobby.</li>
+                  <li>Prevenire abusi e proteggere l’integrità del servizio.</li>
+                  <li>Migliorare stabilità e performance.</li>
+                  <li>Gestire acquisti e funzionalità premium (se presenti).</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Basi giuridiche</h3>
+              <div class="card__body">
+                <ul>
+                  <li>
+                    Esecuzione del servizio richiesto (funzionamento dell’app).
+                  </li>
+                  <li>
+                    Legittimo interesse (sicurezza, prevenzione frodi, debug).
+                  </li>
+                  <li>
+                    Obblighi legali/contabili per gli acquisti, quando applicabile.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Servizi di terze parti</h3>
+              <div class="card__body">
+                <p>
+                  L’app può usare servizi tecnici per autenticazione, database o
+                  protezione dalle frodi (es. infrastrutture cloud).
+                </p>
+                <p class="muted">
+                  Se in futuro attiviamo analytics/monitoraggio avanzato, questa
+                  policy verrà aggiornata.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Conservazione</h3>
+              <div class="card__body">
+                <p>
+                  Conserviamo i dati solo per il tempo necessario a fornire il
+                  servizio e adempiere a obblighi di legge, riducendo al minimo
+                  quanto trattenuto.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">I tuoi diritti</h3>
+              <div class="card__body">
+                <p>
+                  Puoi richiedere informazioni su dati e trattamento e, ove
+                  applicabile, rettifica/cancellazione/limitazione scrivendo a
+                  <a href="mailto:Clackitapp@gmail.com">Clackitapp@gmail.com</a>.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <p class="note">
+            Questa pagina non costituisce consulenza legale; è una policy
+            informativa di base. Se ti serve una privacy policy “legale” completa
+            (GDPR/Store requirements), dimmelo e la rendiamo più formale e precisa
+            rispetto ai servizi effettivamente usati dall’app.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="supporto">
+        <div class="container">
+          <h2 class="section__title">Supporto</h2>
+          <p class="section__lede">
+            Per assistenza, scrivi a:
+            <a class="support-email" href="mailto:Clackitapp@gmail.com"
+              >Clackitapp@gmail.com</a
+            >
+          </p>
+          <div class="card">
+            <h3 class="card__title">Cosa includere nell’email</h3>
+            <div class="card__body">
+              <ul>
+                <li>Modello iPhone/iPad e versione iOS</li>
+                <li>Descrizione rapida del problema</li>
+                <li>Screenshot (se utile)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Il Mio Sito</p>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> AleArty</p>
+        <a class="footer__link" href="#privacy">Privacy</a>
+        <a class="footer__link" href="#supporto">Supporto</a>
+      </div>
     </footer>
-</body>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear(),
+      );
+    </script>
+  </body>
 </html>
